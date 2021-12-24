@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\misc.o"
+".\objects\stm32f10x_adc.o"
+".\objects\stm32f10x_dac.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_i2c.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--strict --scatter ".\Objects\TH_Dec_1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\TH_Dec_1.map" -o .\Objects\TH_Dec_1.axf
